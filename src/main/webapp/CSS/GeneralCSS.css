@@ -1,0 +1,134 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 10 Jan 2024, 11:05:09 pm
+    Author     : irfan
+*/
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url('<%= request.getContextPath() %>/IMAGE/KK_OFFICIAL_LOGO.png');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+    width: 600px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 1);
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+fieldset {
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+
+h1, h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+label {
+    font-family: 'Montserrat', sans-serif;
+    display: block;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="password"] {
+    font-family: 'Montserrat', sans-serif;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+input[type="submit"] {
+    font-family: 'Montserrat', sans-serif;
+    background-color: blue;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+img {
+    width: 200px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+input[value="Login"]{
+    font-family: 'Montserrat', sans-serif;
+    background-color: darkblue;
+    color: #fff;
+    margin-left: 250px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+input[value="Sign Up"] {
+    font-family: 'Montserrat', sans-serif;
+    background-color: darkblue;
+    color: #fff;
+    margin-left: 150px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+label[for="admin"],
+label[for="ph"],
+label[for="cust"]{
+    font-size: 12px;
+}
+
+input[type="submit"]:hover {
+    background-color: blue;
+
+}
+
+a {
+    color: blue;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}

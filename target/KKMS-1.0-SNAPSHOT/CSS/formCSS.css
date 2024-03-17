@@ -1,0 +1,97 @@
+/* 
+    Created on : 20 Jan 2024, 2:40:36 am
+    Author     : irfan
+*/
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url('<%= request.getContextPath() %>/IMAGE/KK_OFFICIAL_LOGO.png');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    font-size: 110%;
+    font-family: 'Montserrat', sans-serif;
+}
+
+table {
+    border-collapse: collapse;
+    background-color: #E6E6E6;
+    margin: 15px;
+    margin-top: 40px;
+    border-radius: 8px; 
+    align-content: center;
+}
+
+td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid black;
+    font-weight: bold;
+}
+
+th {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid black;
+    font-weight: bold;
+    background-color: navy;
+    color: #FFFFFF;
+    text-align: center;
+}
+.button-container {
+    display: flex;
+    gap: 0px;
+    padding-left:50px;
+    margin-left:0px;
+    margin-right:10px;
+}
+.button-add{
+    margin: -10px 20px;
+    padding: 15px 30px;
+    background-color: navy;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: bold;
+    font-size: 15px;
+
+}
+
+.button {
+    padding: 5px 18px;
+    margin: 0 14px;
+    background-color: #223F67;
+    color: #FFFFFF;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: bold;
+    
+}
+
+.button:hover {
+    background-color: #333333;
+}
+
+h1{
+    color: navy;
+    background-color: #E6E6E6;
+    padding: 20px;
+    text-align: center;
+    margin-top: 0px;
+}
+
+a.button-list{
+    background-color: #E6E6E6;
+    color: navy;
+    text-decoration: none;
+    padding: 15px 30px;
+    border-radius: 4px;
+    font-weight: bold;
+    margin-left: 15px;
+}
+
+input{
+    margin: 2px;
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+}

@@ -1,0 +1,5 @@
+com\Model\Admin.class
+com\mycompany\kkms\resources\JakartaEE10Resource.class
+com\Model\Photographer.class
+com\mycompany\kkms\JakartaRestConfiguration.class
+com\Model\Customer.class

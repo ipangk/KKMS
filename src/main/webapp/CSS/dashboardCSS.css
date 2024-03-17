@@ -1,0 +1,75 @@
+/* 
+    Created on : 11 Jan 2024, 2:17:43 am
+    Author     : irfan
+*/
+
+/* admin-dashboard.css */
+
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url('IMAGE/KK_OFFICIAL_LOGO.png');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+    max-width: 600px;
+    padding: 50px 100px;
+    background-color: rgba(235, 235, 235, 235);
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+h1, h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.button-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.button-container button {
+    font-family: 'Montserrat', sans-serif;
+    background-color: darkblue;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.button-container button:hover {
+    background-color: blue;
+}
+
+.image-container img {
+    width: 200px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}

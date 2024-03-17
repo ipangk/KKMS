@@ -1,0 +1,199 @@
+/* 
+    Created on : 11 Jan 2024, 5:40:53 am
+    Author     : irfan
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.sidebar {
+    position: fixed;
+    height: 100%;
+    width: 260px;
+    background: navy;
+    padding: 15px;
+    z-index: 99;
+}
+
+.logo {
+    font-size: 25px;
+    padding: 0 15px;
+}
+
+.sidebar a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.menu-content {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    margin-top: 40px;
+    overflow-y: scroll;
+}
+
+.menu-content::-webkit-scrollbar {
+    display: none;
+}
+
+.menu-items {
+    height: 100%;
+    width: 100%;
+    list-style: none;
+    transition: all 0.4s ease;
+}
+
+.menu-title {
+    color: #fff;
+    font-size: 14px;
+    padding: 15px 20px;
+}
+
+.item a{
+    padding: 16px;
+    display: inline-block;
+    width: 100%;
+    border-radius: 12px;
+}
+
+.item i {
+    font-size: 12px;
+}
+
+.item a:hover{
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.navbar,
+.main {
+    left: 260px;
+    width: calc(100% - 260px);
+    transition: all 0.5s ease;
+    z-index: 1000;
+}
+
+.sidebar.close~.navbar,
+.sidebar.close~.main {
+    left: 0;
+    width: 100%;
+}
+
+.navbar {
+    position: fixed;
+    color: #fff;
+    padding: 15px 20px;
+    font-size: 25px;
+    background: whitesmoke;
+    cursor: pointer;
+}
+
+.navbar #sidebar-close {
+    cursor: pointer;
+}
+.navbar{
+    display: flex;
+    flex-direction: row;
+}
+.title-page{
+    text-align: center;
+    align-items: center;
+    padding-left: 35%;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* ------------------------------------------------------------------------------------------------------------------------------------- */
+.main {
+    position: relative;
+    align-items:normal;
+    padding-top: 90px;
+    height: 100vh;
+    z-index: 100;
+    background-image: url('IMAGE/KK_LIST_LOGO.png');
+}
+table {
+
+    border-collapse: collapse;
+    background-color: #E6E6E6;
+    width: 95%;
+    margin: 10px 15px;
+}
+
+th, td {
+    padding: 8px;
+    text-align: left;
+    border: 1px solid black;
+}
+
+th {
+    background-color: navy;
+    color: #FFFFFF;
+    text-align: center;
+}
+.button-container {
+    display: flex;
+    gap: 0px;
+    padding-left:50px;
+    margin-left:0px;
+    margin-right:10px;
+}
+.button-add{
+    margin: -10px 20px;
+    padding: 15px 30px;
+    background-color: navy;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: bold;
+    font-size: 15px;
+
+}
+
+.button {
+    display: inline-block;
+    padding: 5px 18px;
+    margin: 0 14px;
+    background-color: #223F67;
+    color: #FFFFFF;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+.button:hover {
+    background-color: #333333;
+}
+.references{
+    text-decoration: none;
+    color:#1D3557;
+    font-weight: bold;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+h1{
+    color: navy;
+}
+
+h2{
+    margin-top: 10px;
+    color: whitesmoke;
+    font-weight: 900;
+}
+
+a.button-list{
+    background-color: navy;
+    color: white;
+    text-decoration: none;
+    padding: 15px 30px;
+    border-radius: 4px;
+    font-weight: bold;
+    font-size: 15px;
+    margin: 15px;
+}

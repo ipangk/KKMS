@@ -1,0 +1,161 @@
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #fff; /* White */
+}
+
+.background-images {
+    position: fixed;
+    width: 2000px;
+    height: 2000px;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    animation: changeBackground 50s infinite;
+}
+
+@keyframes changeBackground {
+    0%, 12.5% {
+        background-image: url('BACK_IMAGE/bckimg4.png');
+    }
+    17.5%, 37.5% {
+        background-image: url('BACK_IMAGE/bckimg1.png');
+    }
+    42.5%, 62.5% {
+        background-image: url('BACK_IMAGE/bckimg2.png');
+    }
+    67.5%, 87.5% {
+        background-image: url('BACK_IMAGE/bckimg3.png');
+    }
+    92.5%, 100% {
+        background-image: url('BACK_IMAGE/bckimg4.png');
+    }
+}
+
+.navbar {
+    background-color: #143499;/*#2c3e50; /* Blue */
+    padding: 15px;
+    text-align: right;
+}
+
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 0 10px;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.navbar a:hover {
+    color: #3498db; /* Light Blue */
+}
+
+.dashboard-section {
+    margin: 15px;
+    padding: 5px;
+    background-color: #143499;/*#34495e; /* Slightly darker Blue */
+    border-radius: 8px;
+}
+
+/* Add this style to the existing CSS */
+.container {
+    display: flex;
+}
+
+.detail-section, .option-section {
+    margin: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 8px;
+}
+
+.detail-section {
+    float: right;
+    order: 1;
+    background-color: #143499;
+    color: white;    
+    width: 70%;
+    padding: 15px;
+    max-width: 900px;
+    border-radius: 8px; /* Add border-radius for rounded corners */
+    overflow: hidden; /* Clear float */
+    height: 465px;
+}
+
+.detail-section table {
+    width: 100%;
+    border-collapse: collapse; /* Collapse borders for a cleaner look */
+}
+
+.detail-section th, .detail-section td {
+    border: 1px solid #fff; /* White border for cells */
+    padding: 12px;
+    text-align: left;
+}
+
+.detail-section th {
+    background-color: #1f4a75; /* Darker Blue for header */
+}
+
+.detail-section tr:nth-child(even) {
+    background-color: #1f4a75; /* Alternating row color */
+}
+
+.detail-section tr:nth-child(odd) {
+    background-color: #143499; /* Base row color */
+}
+
+.option-section {
+    float: left;
+    width: 30%;
+    max-width: 690px;
+    order: 2;
+    background-color: #143499;
+    padding: 25px;
+    height: 445px;
+}
+
+.option-section button:hover {
+    background-color: #666666;
+    color: white;
+}
+
+button{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    background-color: white;
+    color: #666666;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    transition: background-color 0.3s ease;
+}
+
+
+h1 {
+    text-align: center;
+}
+
+p {
+    text-align: center;
+}
+
+.detail-section h2{
+    text-align: center;
+}
+
+.option-section h2{
+    text-align: center;
+}
+
+
+img{
+    margin: 5px;
+}
